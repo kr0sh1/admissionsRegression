@@ -12,3 +12,5 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import Normalizer
 from sklearn.metrics import r2_score
+
+admissionData = pd.read_csv("admissions_data.csv")
