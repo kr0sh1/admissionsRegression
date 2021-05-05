@@ -48,7 +48,7 @@ features_test = ct.transform(features_test)
 # create neural network
 admissionsModel = build_model(features_train)
 print(admissionsModel.summary())
-admissionsModel.fit(features_train, labels_train, epochs=80, batch_size=1, verbose=1)
+admissionsModel.fit(features_train, labels_train, epochs=20, batch_size=1, verbose=1)
 
 val_mse, val_mae = None, None
 val_mse, val_mae = admissionsModel.evaluate(features_test, labels_test, verbose=0)
